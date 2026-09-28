@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharina · Ayuda Examen RD | Registro Inmobiliario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">⚖️ <span>Sharina · Ayuda Examen RD</span></div>
+  <p>Tu puedes amor mio, eres la mejor</p>
+</header>
+
+<nav>
+  <button class="nav-btn active" data-section="inicio">Inicio</button>
+  <button class="nav-btn" data-section="temas">📚 Temas</button>
+  <button class="nav-btn" data-section="quiz">🧠 Practicar</button>
+  <button class="nav-btn" data-section="lectura">📖 Leer normas</button>
+  <button class="nav-btn" data-section="fuentes">🔗 Fuentes</button>
+</nav>
+
+<main>
+  <section id="inicio" class="section active">
+    <div class="hero">
+      <span class="badge">👩‍⚖️ PREPARADO PARA SHARINA</span>
+      <h1>Sharina, prepárate para tu próximo reto jurídico</h1>
+      <p>Este es tu espacio personal para estudiar, practicar y consultar las normas. Repasa por materia, abre la fuente oficial y mide tu progreso con 100 preguntas.</p>
+      <div class="search-box">
+        <span>🔎</span>
+        <input id="searchInput" type="text" placeholder="Buscar ley, resolución, concepto, artículo...">
+      </div>
+    </div>
+    <div class="stats">
+      <div><strong>9</strong><span>áreas de estudio</span></div>
+      <div><strong id="questionCount">100</strong><span>preguntas</span></div>
+      <div><strong id="scoreHome">0</strong><span>aciertos</span></div>
+    </div>
+    <div class="assistant-box">
+  <h2>👩‍⚖️ Herramientas para el puesto</h2>
+  <div class="assistant-grid">
+    <div><strong>📂 Expedientes</strong><span>Aprender a ordenar documentos, fechas, partes y actuaciones.</span></div>
+    <div><strong>⏰ Plazos</strong><span>Crear cronologías y detectar tareas pendientes.</span></div>
+    <div><strong>🔎 Investigación</strong><span>Localizar el artículo exacto y verificar la fuente oficial.</span></div>
+    <div><strong>📝 Redacción</strong><span>Separar hechos, fundamentos jurídicos, pruebas y petición.</span></div>
+    <div><strong>🏠 Inmobiliario</strong><span>Distinguir Tribunal, Mensuras y Registro de Títulos.</span></div>
+    <div><strong>✅ Control final</strong><span>Revisar nombres, cédulas, números, fechas, anexos y firmas.</span></div>
+  </div>
+</div>
+<div class="sharina-callout">
+      <div><span class="tag">🎓 PLAN DE SHARINA</span><h2>Estudia por bloques, no todo de golpe</h2><p>Abre una norma, estudia su guía, practica sus preguntas y luego pasa a la siguiente. Cuando estés lista, haz un examen de 20 preguntas.</p>
+      <button id="startExam" class="primary">🎯 Comenzar examen de 20</button></div>
+    </div>
+    <h2>Áreas de estudio</h2>
+    <div id="homeCards" class="grid"></div>
+  </section>
+
+  <section id="temas" class="section">
+    <div class="section-head">
+      <div>
+        <h1>📚 Material de estudio</h1>
+        <p>Selecciona un tema para ver su resumen y conceptos clave.</p>
+      </div>
+      <input id="topicSearch" class="mini-search" placeholder="Buscar tema...">
+    </div>
+    <div id="topicList"></div>
+  </section>
+
+  <section id="quiz" class="section">
+    <div class="quiz-top">
+      <div>
+        <h1>🧠 Modo práctica de Sharina</h1>
+        <p>Hay 100 preguntas: 10 por cada norma principal y 20 de casos y herramientas para el puesto.</p>
+      </div>
+      <button id="newQuiz" class="primary">🔀 Nueva pregunta</button>
+    </div>
+    <div class="progress"><div id="progressBar"></div></div>
+    <div id="quizCard" class="quiz-card"></div>
+  </section>
+
+
+  <section id="lectura" class="section">
+    <div class="section-head">
+      <div>
+        <h1>📖 Leer cada norma</h1>
+        <p>Selecciona una norma. Se abrirá el documento oficial o la página institucional para leerlo completo.</p>
+      </div>
+    </div>
+    <div class="notice"><strong>Nota:</strong> los documentos oficiales pueden abrirse en otra pestaña o descargarse como PDF. Para las resoluciones inmobiliarias, el portal oficial reúne las versiones publicadas. Comprueba siempre si existen modificaciones posteriores.</div>
+    <div class="reader-list">
+      <article class="reader-item"><div><h3>Ley 51-07</h3><p>Modifica la Ley 108-05 de Registro Inmobiliario.</p></div><a target="_blank" rel="noopener" href="https://ri.gob.do/?p=1">Consultar en el Registro Inmobiliario ↗</a></article>
+      <article class="reader-item"><div><h3>Resolución 787-2022</h3><p>Reglamento de los Tribunales de la Jurisdicción Inmobiliaria.</p></div><a target="_blank" rel="noopener" href="https://logros.ri.gob.do/index.php/download/resolucion-num-787-2022-reglamento-de-los-tribunales-superiores-de-tierras-y-de-jurisdiccion-original-del-registro-inmobiliario/">Leer / descargar PDF ↗</a></article>
+      <article class="reader-item"><div><h3>Resolución 788-2022</h3><p>Reglamento General de Registro de Títulos.</p></div><a target="_blank" rel="noopener" href="https://ri.gob.do/wp-content/uploads/Marco_Legal/Resolucion/Resolucion_788-2022.pdf">Leer PDF ↗</a></article>
+      <article class="reader-item"><div><h3>Resolución 789-2022</h3><p>Reglamento General de Mensuras Catastrales.</p></div><a target="_blank" rel="noopener" href="https://ri.gob.do/wp-content/uploads/Marco_Legal/Resolucion/Resolucion_789-2022.pdf">Leer PDF ↗</a></article>
+      <article class="reader-item"><div><h3>Resolución 790-2022</h3><p>Reglamento para la Regularización Parcelaria y el Deslinde.</p></div><a target="_blank" rel="noopener" href="https://ri.gob.do/wp-content/uploads/Marco_Legal/Resolucion/Resolucion_790-2022.pdf">Leer PDF ↗</a></article>
+      <article class="reader-item"><div><h3>Código Civil</h3><p>Texto disponible en la normativa del Poder Judicial.</p></div><a target="_blank" rel="noopener" href="https://poderjudicial.gob.do/sobre-nosotros/normativa-del-poder-judicial/">Abrir sección de códigos ↗</a></article>
+      <article class="reader-item"><div><h3>Código de Procedimiento Civil</h3><p>Texto disponible en la normativa del Poder Judicial.</p></div><a target="_blank" rel="noopener" href="https://poderjudicial.gob.do/sobre-nosotros/normativa-del-poder-judicial/">Abrir sección de códigos ↗</a></article>
+      <article class="reader-item"><div><h3>Ley 108-05</h3><p>Ley de Registro Inmobiliario.</p></div><a target="_blank" rel="noopener" href="https://ri.gob.do/wp-content/uploads/2023/10/Libro-Ley-108-05-de-registro-inmobiliario.pdf">Leer PDF ↗</a></article>
+    </div>
+    <p class="small-note">También puedes consultar el <a target="_blank" rel="noopener" href="https://ri.gob.do/?page_id=699">listado oficial de reglamentos del Registro Inmobiliario</a> y la <a target="_blank" rel="noopener" href="https://poderjudicial.gob.do/sobre-nosotros/normativa-del-poder-judicial/">normativa del Poder Judicial</a>.</p>
+  </section>
+
+  <section id="fuentes" class="section">
+    <h1>🔗 Fuentes oficiales</h1>
+    <p>Usa estas fuentes para comprobar el texto completo y la versión aplicable de cada norma.</p>
+    <div class="sources">
+      <a target="_blank" href="https://ri.gob.do/">Registro Inmobiliario – Poder Judicial ↗</a>
+      <a target="_blank" href="https://ri.gob.do/wp-content/uploads/2023/10/Libro-Ley-108-05-de-registro-inmobiliario.pdf">Ley 108-05 / texto disponible en RI ↗</a>
+      <a target="_blank" href="https://ri.gob.do/wp-content/uploads/Marco_Legal/Resolucion/Resolucion_788-2022.pdf">Resolución 788-2022 ↗</a>
+      <a target="_blank" href="https://ri.gob.do/wp-content/uploads/Marco_Legal/Resolucion/Resolucion_789-2022.pdf">Resolución 789-2022 ↗</a>
+      <a target="_blank" href="https://logros.ri.gob.do/index.php/descarga/">Biblioteca de descargas del Registro Inmobiliario ↗</a>
+    </div>
+    <div class="notice">
+      <strong>⚠️ Importante:</strong> esta página es una herramienta de estudio. La Resolución 790-2022 fue modificada posteriormente por la Resolución 82-2025. Verifica siempre la versión vigente. Verifica siempre la versión vigente antes de usar una norma en un caso real.
+    </div>
+  </section>
+</main>
+
+<footer>⚖️ Sharina · Ayuda Examen RD · Hecho para estudiar · 2026</footer>
+<script src="script.js"></script>
+</body>
+</html>
